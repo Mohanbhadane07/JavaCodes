@@ -28,7 +28,7 @@ public class Demo {
     students[2] = s3;
 
     for ( student n : students) {
-      System.out.println(n.marks + " " + n.name + " " + n.rollno);
+      System.out.println(n.marks + " " + n.name + " " + n.rollno );
     }
   }
 }
