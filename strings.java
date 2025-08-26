@@ -1,9 +1,36 @@
-public class strings
+class Mobile
 {
-    public static void main(String[] args) {
-        StringBuffer sb = new StringBuffer("mohan");
-        sb.append(" bhadane");
-    
-        System.out.println(sb); 
-    }
+ String brand; 
+ int price;
+  static String name;
+
+  public void Show()
+
+ {
+     System.out.println(brand + ":" + price + ":" + name);
+ }
 }
+public class strings 
+{
+ public static void main(String args[])
+ {
+ Mobile m1=new Mobile();
+ m1.brand="Apple";
+ m1.price=100000;
+ Mobile.name="Iphone";
+ m1.Show();
+
+ Mobile m2=new Mobile();
+ m2.brand="Samsung";
+ m2.price=80000;
+ Mobile.name="Galaxy";
+ m2.Show();
+
+ Mobile m3=new Mobile();
+ m3.brand="Oneplus";
+ m3.price=60000;
+ Mobile.name="Nord";
+ m3.Show();
+ }
+}
+
