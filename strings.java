@@ -6,9 +6,18 @@ class Mobile
 
   public void Show()
 
- {
-     System.out.println(brand + ":" + price + ":" + name);
- }
+  {
+      System.out.println(brand + ":" + price + ":" + name);
+  }
+    
+public static void Show1(Mobile m1)
+{
+    System.out.println( m1.brand + ":" + m1.price + ":" + name);
+  }
+
+
+
+
 }
 public class strings 
 {
@@ -32,14 +41,15 @@ public class strings
  m3.price=60000;
  Mobile.name = "Nord";
 
- m1.name = "phone";
+ m2.name = "phone";
  
  m1.Show();
  m2.Show();
  m3.Show();
-    
- 
 
+    
+ Mobile.Show1(m1);
+ 
 
  }
 }
