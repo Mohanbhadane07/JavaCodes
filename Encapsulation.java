@@ -2,6 +2,15 @@ class Human {
     private int age;
     private String name;
 
+    public Human()
+    {
+        age = 12;
+        name = "Mohan";
+    }
+
+
+
+
     public int getAge() {
         return age;
     }
@@ -22,8 +31,11 @@ class Human {
 public class Encapsulation {
     public static void main(String[] args) {
         Human obj = new Human();
-        obj.setAge(30);
-        obj.setName("mohan");
         System.out.println(obj.getName() + " " + obj.getAge());
+        Human obj1 = new Human();
+
+       obj1.setAge(30);
+        obj1.setName("mohan");
+     System.out.println(obj1.getName() + " " + obj1.getAge());
     }
 }

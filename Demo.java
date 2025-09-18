@@ -1,34 +1,12 @@
-class student {
-   int rollno;
-   String name;
-   int marks;
-}
-
 public class Demo {
 
   public static void main(String[] args) {
-    student s1 = new student();
-    s1.rollno = 1;
-    s1.name = "mohan"; 
-    s1.marks = 90;
-
-    student s2 = new student();
-    s2.rollno = 2;
-    s2.name = "ravi";
-    s2.marks = 90;
-
-    student s3 = new student();
-    s3.rollno = 3;
-    s3.name = "om";
-    s3.marks = 85;
-
-    student students[] = new student[3];
-    students[0] = s1;
-    students[1] = s2;
-    students[2] = s3;
-
-    for ( student n : students) {
-      System.out.println(n.marks + " " + n.name + " " + n.rollno );
-    }
+    AdvCalc obj = new AdvCalc();
+    int r1 = obj.add(3, 4);
+    int r2 = obj.sub(9, 0);
+    int r3 = obj.multi(2, 2);
+    int r4 = obj.div(2, 4);
+    System.out.println(r1+" "+r2+" "+r3+" "+r4);
   }
 }
+    
